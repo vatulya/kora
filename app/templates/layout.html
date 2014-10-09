@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/lightbox/jquery.lightbox.css">
+    <link rel="stylesheet" href="/css/common.css">
+
+    <title>Студия "Кора"</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Студия &quot;Кора&quot;" />
+    <meta name="description" content="Студия &quot;Кора&quot;" />
+</head>
+<body>
+
+    <div class="container">
+        {% block header %}
+        <div class="header col-lg-12">
+            <div class="header-menu">
+                <ul class="horizontal-menu">
+                    <li class="menu-item">
+                        <a class="menu-link active" href="/">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="/?action=mozaika">
+                            Мозайка
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="/?action=gallery">
+                            Галерея работ
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="/?action=about">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="/?action=designers">
+                            Дизайнеры
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {% endblock %}
+
+        {% block content %}{% endblock %}
+
+        {% block footer %}
+        <div class="footer col-xs-12">
+            <div class="common-information">
+                Студия "Кора". г. Харьков, ул. Мироносицкая,44. Тел. (057)700-48-57, +380669008144, +380951198828, +380980337345. kora_ma@ukr.net
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+
+    <script src="/lightbox/jquery.lightbox.min.js"></script>
+    <script src="/js/jquery.ae.image.resize.min.js"></script>
+    <script src="/js/common.js"></script>
+
+</body>
+</html>

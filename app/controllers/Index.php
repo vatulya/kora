@@ -7,7 +7,26 @@ class Index extends AbstractController
 
     public function indexAction()
     {
-        $this->view['hello'] = 'world';
+    }
+
+    public function mozaikaAction()
+    {
+
+    }
+
+    public function galleryAction()
+    {
+
+    }
+
+    public function aboutAction()
+    {
+
+    }
+
+    public function designersAction()
+    {
+
     }
 
 }
