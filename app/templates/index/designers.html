@@ -1,7 +1,32 @@
 {% extends "layout.html" %}
 
 {% block content %}
-        <div class="content col-lg-12">
+        <div class="content row">
+
+            <div class="col-lg-12">
+                <table class="designers">
+                    {% for folder, designer in designers %}
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="name">{{ designer.name }}</td>
+                    </tr>
+                    <tr class="designer-info">
+                        <td class="photo">
+                            <img src="/img/designers/{{ folder }}/{{ designer.photo }}">
+                        </td>
+                        <td class="works">
+                            <ul>
+                            {% for work in designer.works %}
+                            <li class="work">
+                                <a href="/img/designers/{{ folder }}/{{ work.filename }}" class="image-lightbox" data-lightbox-gallery="gallery"><img src="/img/designers/{{ folder }}/{{ work.thumbnail }}"></a>
+                            </li>
+                            {% endfor %}
+                            </ul>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
 
         </div>
 {% endblock %}

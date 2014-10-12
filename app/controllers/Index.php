@@ -231,6 +231,63 @@ class Index extends AbstractController
 
     public function designersAction()
     {
+        $designers = [
+            'vinogradova' => [
+                'name' => 'Наталия Виноградова',
+                'photo' => 'vinogradova-natalia.jpg',
+                'works' => [
+                    [
+                        'thumbnail' => 'vs1-200x200.jpg',
+                        'filename' => 'vs1.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'vs2-200x200.jpg',
+                        'filename' => 'vs2.jpg',
+                    ],
+                    [
+                        'thumbnail' => '012-150x200.jpg',
+                        'filename' => '012',
+                    ],
+                ],
+            ],
+            'khalaimova' => [
+                'name' => 'Халаимова Карина',
+                'photo' => 'khalaimova-karina.jpg',
+                'works' => [
+                    [
+                        'thumbnail' => 'krh8-200x200.jpg',
+                        'filename' => 'krh8.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'krh9-200x200.jpg',
+                        'filename' => 'krh9.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'krh10-200x200.jpg',
+                        'filename' => 'krh10.jpg',
+                    ],
+                ],
+            ],
+            'bobryshova' => [
+                'name' => 'Бобрышова Ирина',
+                'photo' => 'bobryshova-irina_small.jpg',
+                'works' => [
+                    [
+                        'thumbnail' => 'bathroom-200x200.jpg',
+                        'filename' => 'bathroom.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'kabinet-200x202.jpg',
+                        'filename' => 'kabinet.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'garderob-200x203.jpg',
+                        'filename' => 'garderob.jpg',
+                    ],
+                ],
+            ],
+        ];
+        $this->view['designers'] = $designers;
     }
 
 }
