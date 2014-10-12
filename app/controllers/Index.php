@@ -286,6 +286,96 @@ class Index extends AbstractController
                     ],
                 ],
             ],
+            'movchan' => [
+                'name' => 'Мовчан Елизавета',
+                'photo' => 'movchan-liza.jpg',
+                'works' => [
+                    [
+                        'thumbnail' => 'lm1-200x200.jpg',
+                        'filename' => 'lm1.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'ml2-200x200.jpg',
+                        'filename' => 'ml2.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'ml3-200x200.jpg',
+                        'filename' => 'ml3.jpg',
+                    ],
+                ],
+            ],
+            'imshineckiy' => [
+                'name' => 'Имшинецкий Александр',
+                'photo' => 'imshineckiy-alexandr.jpg',
+                'works' => [
+                    [
+                        'thumbnail' => 'al1-200x200.jpg',
+                        'filename' => 'al1.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'al2-200x200.jpg',
+                        'filename' => 'al2.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'al3-200x200.jpg',
+                        'filename' => 'al4.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'al4-200x200.jpg',
+                        'filename' => 'al4.jpg',
+                    ],
+                ],
+            ],
+            'reznichenko' => [
+                'name' => 'Резниченко Юлия',
+                'photo' => 'reznichenko-yulia_small.jpg',
+                'works' => [
+                    [
+                        'thumbnail' => 'yr1-200x200.jpg',
+                        'filename' => 'yr1.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'yr2-200x200.jpg',
+                        'filename' => 'yr2.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'yr3-200x200.jpg',
+                        'filename' => 'yr4.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'yr4-200x200.jpg',
+                        'filename' => 'yr4.jpg',
+                    ],
+                ],
+            ],
+            'gudkova' => [
+                'name' => 'Гудкова Татьяна',
+                'photo' => 'gudkova-tatiana_small.jpg',
+                'works' => [
+                    [
+                        'thumbnail' => 'tg1-200x200.jpg',
+                        'filename' => 'tg1.jpg',
+                    ],
+                ],
+            ],
+            'pedan' => [
+                'name' => 'Педан Алена',
+                'photo' => 'pedan-alena.jpg',
+                'works' => [
+                    [
+                        'thumbnail' => 'ald1-200x200.jpg',
+                        'filename' => 'ald1.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'ald2-200x200.jpg',
+                        'filename' => 'ald2.jpg',
+                    ],
+                    [
+                        'thumbnail' => 'ald3-200x200.jpg',
+                        'filename' => 'ald4.jpg',
+                    ],
+                ],
+            ],
         ];
         $this->view['designers'] = $designers;
     }
