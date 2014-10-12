@@ -14,14 +14,14 @@ abstract class AbstractController
     protected $view = [];
 
     /**
-     * @var bool
-     */
-    protected $needRender = true;
-
-    /**
      * @return null
      */
     abstract public function indexAction();
+
+    public function init()
+    {
+
+    }
 
     /**
      * @param string $action
@@ -44,40 +44,13 @@ abstract class AbstractController
         try {
             /** @var AbstractController $object */
             $object = new $class();
+            $object->init();
             $object->$method();
-            if ($object->isNeedRender()) {
-                $object->render($controller, $action);
-            }
+            $object->render($controller, $action);
         } catch (\Exception $e) {
-//            die('Exception: "' . $e->getMessage() . '" (' . $e->getFile() . ':' . $e->getLine() . ')');
-            die('Something wrong');
+            die('Exception: "' . $e->getMessage() . '" (' . $e->getFile() . ':' . $e->getLine() . ')');
+//            die('Something wrong');
         }
-    }
-
-    /**
-     * @return $this
-     */
-    protected function noRender()
-    {
-        $this->needRender = false;
-        return $this;
-    }
-
-    /**
-     * @return $this
-     */
-    protected function needRender()
-    {
-        $this->needRender = true;
-        return $this;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isNeedRender()
-    {
-        return (bool)$this->needRender;
     }
 
     /**

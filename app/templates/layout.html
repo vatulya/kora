@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+    <script src="/js/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+    <script src="/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="/lightbox/jquery.lightbox.css">
     <link rel="stylesheet" href="/css/common.css">
@@ -23,31 +27,31 @@
 
     <div class="container">
         {% block header %}
-        <div class="header col-lg-12">
+        <div class="header">
             <div class="header-menu">
                 <ul class="horizontal-menu">
                     <li class="menu-item">
-                        <a class="menu-link active" href="/">
+                        <a class="menu-link {% if not page or page == 'index' %}active{% endif %}" href="/">
                             Главная
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="/?action=mozaika">
+                        <a class="menu-link {% if page == 'mozaika' %}active{% endif %}" href="/?action=mozaika">
                             Мозайка
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="/?action=gallery">
+                        <a class="menu-link {% if page == 'gallery' %}active{% endif %}" href="/?action=gallery">
                             Галерея работ
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="/?action=about">
+                        <a class="menu-link {% if page == 'about' %}active{% endif %}" href="/?action=about">
                             О нас
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="/?action=designers">
+                        <a class="menu-link {% if page == 'designers' %}active{% endif %}" href="/?action=designers">
                             Дизайнеры
                         </a>
                     </li>

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+        <div class="content">
+
+            <div class="big-gallery">
+            {% for image in images %}
+                <div class="gallery-item" style="height: {{ image.height + 4 }}px;">
+                    <a href="/img/gallery/{{ image.filename }}" class="image-lightbox" data-lightbox-gallery="gallery">
+                        <img src="/img/gallery/{{ image.filename }}">
+                    </a>
+                </div>
+            {% endfor %}
+            </div>
+
+        </div>
+{% endblock %}
