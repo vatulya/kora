@@ -176,6 +176,57 @@ body {
 }
 /* /gallery */
 
+/* download */
+.page-mozaika .content {
+    background-color: #1f1a17;
+}
+
+.download-article .title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.download-article .download-link a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* /download */
+
+/* logos-article */
+.factories,
+.chemistry {
+    width: 100%;
+}
+
+.factories th,
+.chemistry th {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.factories td,
+.chemistry td {
+    padding: 10px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.factory-link .image,
+.chemistry-link .image {
+    width: 70px;
+}
+
+.factory-link .title,
+.chemistry-link .title {
+    font-weight: bold;
+    font-size: 12px;
+}
+/* /logos-article */
+
 /*** /MOZAIKA ***/
 
 /*** GALLERY ***/
