@@ -3,7 +3,7 @@
 {% block content %}
         <div class="content row">
 
-            <div class="big-gallery">
+            <div class="big-gallery masonry">
             {% for image in images %}
                 <div class="gallery-item" style="height: {{ image.height + 4 }}px;">
                     <a href="/img/gallery/origins/{{ image.filename }}" class="image-lightbox" data-lightbox-gallery="gallery">

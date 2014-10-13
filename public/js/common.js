@@ -2,6 +2,15 @@
 
     $(document).ready(function() {
         $('.image-lightbox').iLightbox();
+
+        var $bigGallery = $('.big-gallery');
+        if ($bigGallery.length) {
+            $bigGallery.masonry({
+                columnWidth: 180,
+                gutter: 5,
+                itemSelector: '.gallery-item'
+            });
+        }
     });
     $('.resizeme').each(function (i, el) {
         var $el = $(el),
