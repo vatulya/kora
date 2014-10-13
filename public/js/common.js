@@ -2,6 +2,7 @@
 
     $(document).ready(function() {
         $('.image-lightbox').iLightbox();
+        $('.image-lazyload').lazyload();
 
         var $bigGallery = $('.big-gallery');
         if ($bigGallery.length) {
