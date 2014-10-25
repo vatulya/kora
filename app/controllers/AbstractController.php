@@ -38,8 +38,8 @@ abstract class AbstractController
         $class = '\Controller\\' . ucfirst(strtolower($controller));
         $method = ucfirst(strtolower($action)) . 'Action';
         if (!class_exists($class) || !is_callable([$class, $method], true)) {
-//            die('Can\'t load "' . $class . '::' . $method . '"');
-            die('Something wrong');
+            die('Can\'t load "' . $class . '::' . $method . '"');
+//            die('Something wrong');
         }
         try {
             /** @var AbstractController $object */
@@ -59,6 +59,7 @@ abstract class AbstractController
      */
     public function render($controller, $action)
     {
+        $this->view['page'] = sprintf('%s__%s', $controller, $action);
         $file = sprintf('%s/%s.html', strtolower($controller), strtolower($action));
         echo self::getTwig()->render($file, $this->view);
     }

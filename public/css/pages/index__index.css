@@ -1,0 +1,113 @@
+body {
+  background: #070605 url('/img/bg-high.jpg') 50% 0 fixed;
+}
+/*** LAYOUT ***/
+.header {
+  width: 100%;
+  padding-top: 60px;
+}
+.horizontal-menu {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  height: 60px;
+}
+.horizontal-menu .menu-item {
+  float: left;
+  text-align: center;
+  padding: 0 20px;
+  width: 20%;
+}
+.horizontal-menu .menu-item .menu-link {
+  display: block;
+  white-space: nowrap;
+  font-size: 14px;
+  height: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  color: #000;
+}
+.horizontal-menu .menu-item .menu-link.active {
+  color: #fff;
+}
+.horizontal-menu .menu-item .menu-link:hover {
+  color: #fff;
+}
+.content {
+  padding: 20px 0;
+  background-color: #0c0c0c;
+}
+.footer {
+  padding: 50px 0 20px;
+  text-align: center;
+}
+.footer .common-information {
+  color: #000;
+  font-weight: bold;
+  text-shadow: black 1px 1px 2px;
+}
+/*** /LAYOUT ***/
+/*** INDEX ***/
+.big-logo img {
+  width: 100%;
+}
+.small-gallery .gallery-item {
+  margin: 2px 2px 0 0;
+  padding: 0;
+  float: left;
+}
+.small-gallery .gallery-item:last-child {
+  margin-right: 0;
+}
+.small-gallery .gallery-item img {
+  height: 150px;
+  width: 150px;
+}
+@media (min-width: 500px) {
+  .small-gallery {
+    width: 448px;
+    margin: 0 auto;
+  }
+  .small-gallery .gallery-item,
+  .small-gallery .gallery-item img {
+    height: 73px;
+    width: 73px;
+  }
+}
+@media (min-width: 768px) {
+  .small-gallery {
+    width: 100%;
+    margin: 0;
+  }
+  .small-gallery .gallery-item,
+  .small-gallery .gallery-item img {
+    height: 118px;
+    width: 118px;
+  }
+  .small-gallery .gallery-item:last-child img {
+    width: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .small-gallery .gallery-item,
+  .small-gallery .gallery-item img {
+    height: 155px;
+    width: 155px;
+  }
+  .small-gallery .gallery-item:last-child img {
+    width: 155px;
+  }
+}
+@media (min-width: 1200px) {
+  .small-gallery .gallery-item,
+  .small-gallery .gallery-item img {
+    height: 188px;
+    width: 188px;
+  }
+  .small-gallery .gallery-item:last-child img {
+    width: 190px;
+  }
+}
+/*** /INDEX ***/

@@ -1,0 +1,73 @@
+@import "../../common";
+
+/*** INDEX ***/
+
+.big-logo img {
+  width: 100%;
+}
+
+.small-gallery .gallery-item {
+  margin: 2px 2px 0 0;
+  padding: 0;
+  float: left;
+}
+
+.small-gallery .gallery-item:last-child {
+  margin-right: 0;
+}
+
+.small-gallery .gallery-item img {
+  height: 150px;
+  width: 150px;
+}
+
+@media (min-width: 500px) {
+  .small-gallery {
+    width: 448px;
+    margin: 0 auto;
+  }
+  .small-gallery .gallery-item,
+  .small-gallery .gallery-item img {
+    height: 73px;
+    width: 73px;
+  }
+}
+
+@media (min-width: 768px) {
+  .small-gallery {
+    width: 100%;
+    margin: 0;
+  }
+  .small-gallery .gallery-item,
+  .small-gallery .gallery-item img {
+    height: 118px;
+    width: 118px;
+  }
+  .small-gallery .gallery-item:last-child img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .small-gallery .gallery-item,
+  .small-gallery .gallery-item img {
+    height: 155px;
+    width: 155px;
+  }
+  .small-gallery .gallery-item:last-child img {
+    width: 155px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .small-gallery .gallery-item,
+  .small-gallery .gallery-item img {
+    height: 188px;
+    width: 188px;
+  }
+  .small-gallery .gallery-item:last-child img {
+    width: 190px;
+  }
+}
+
+/*** /INDEX ***/
