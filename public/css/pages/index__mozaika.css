@@ -49,7 +49,6 @@ body {
   text-shadow: black 1px 1px 2px;
 }
 /*** /LAYOUT ***/
-/*** MOZAIKA ***/
 .page-mozaika .content {
   background-color: #1f1a17;
 }
@@ -57,8 +56,6 @@ body {
   /*float: left;*/
   padding: 0 10px;
   margin: 10px 0;
-}
-.gallery .gallery-item {
   /*padding: 2px 2px 0 0;*/
   height: 160px;
 }
@@ -73,8 +70,6 @@ body {
   .gallery .gallery-item,
   .gallery .gallery-item img {
     height: 160px;
-  }
-  .gallery .gallery-item img {
     width: auto;
   }
 }
@@ -111,12 +106,16 @@ body {
   width: 100%;
 }
 .factories th,
+.chemistry th,
+.factories th,
 .chemistry th {
   color: #fff;
   font-size: 18px;
   text-align: center;
   padding: 10px;
 }
+.factories td,
+.chemistry td,
 .factories td,
 .chemistry td {
   padding: 10px;
@@ -132,4 +131,3 @@ body {
   font-weight: bold;
   font-size: 12px;
 }
-/*** /MOZAIKA ***/
